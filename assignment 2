@@ -193,3 +193,34 @@
 //
 //    }
 //}
+/////////////////////////////////------code 8 ----////////////////////////////////////////////
+
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner user=new Scanner(System.in);
+        int  attempets =0;
+        System.out.println("enter your new password(you have 3 attempets ): ");
+        do
+        {
+            String password=user.next();
+
+            System.out.println("enter your password again: ");
+            String password_2=user.next();
+
+            if(password.equals(password_2))
+            {
+                System.out.println("your password is correct ");
+                break;
+            }
+            else
+            {
+                System.out.println("password failed, enter again");
+                attempets++;
+            }
+        }while(attempets<3);
+    }
+}
