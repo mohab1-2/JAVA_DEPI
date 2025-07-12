@@ -1,59 +1,63 @@
-//import java.util.Scanner;
-//public class Main
-//{
-//    public static void main(String[] args)
-//    {
-//        Scanner user=new Scanner(System.in);
-//        System.out.println("enter the number of the students ");
-//        int number= user.nextInt();
-//
-//        String[] name = new String[number];
-//        double[] AVG = new double[number];
-//        char[] grades = new char[number];
-//
-//        for(int i=0;i<number;i++ )
-//        {
-//            System.out.println("== Student "+(i+1)+" ==");
-//            System.out.println("Enter name: ");
-//            name[i]=user.next();
-//            System.out.println("Enter your score in the exam 1: ");
-//            double score_1=user.nextInt();
-//            System.out.println("Enter your score in the exam 2: ");
-//            double score_2=user.nextInt();
-//            System.out.println("Enter your score in the exam 3: ");
-//            double score_3=user.nextInt();
-//            AVG[i]=(score_1 + score_2 + score_3)/3;
-//            System.out.println("================================");
-//
-//            if(AVG[i]>=85)
-//            {
-//                System.out.println("your grad is -A- ");
-//            }
-//            else if(AVG[i]>=70 && AVG[i]<=84)
-//            {
-//                System.out.println("your grad is -B- ");
-//            }
-//            else if(AVG[i]>=50 && AVG[i]<=69)
-//            {
-//                System.out.println("your grad is -C- ");
-//            }
-//            else if(AVG[i]<50)
-//            {
-//                System.out.println("your grad is -F- ");
-//            }
-//            System.out.println("================================");
-//
-//        }
-//        for(int j=0;j<number;j++)
-//        {
-//            System.out.println("student --"+ (j+1) +"--");
-//            System.out.println("Name: "+name);
-//            System.out.println("agverage grades: "+AVG);
-//            System.out.println( "your grade is: "+grades);
-//            System.out.println("========================");
-//        }
-//    }
-//}
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner user=new Scanner(System.in);
+        System.out.println("enter the number of the students ");
+        int number= user.nextInt();
+
+        String[] name = new String[number];
+        double[] AVG = new double[number];
+        char[] grades = new char[number];
+
+        for(int i=0;i<number;i++ )
+        {
+            System.out.println("== Student "+(i+1)+" ==");
+            System.out.println("Enter name: ");
+            name[i]=user.next();
+            System.out.println("Enter your score in the exam 1: ");
+            double score_1=user.nextInt();
+            System.out.println("Enter your score in the exam 2: ");
+            double score_2=user.nextInt();
+            System.out.println("Enter your score in the exam 3: ");
+            double score_3=user.nextInt();
+            AVG[i]=(score_1 + score_2 + score_3)/3;
+            System.out.println("================================");
+
+            if(AVG[i]>=85)
+            {
+                grades[i] = 'A';
+                System.out.println("your grad is -A- ");
+            }
+            else if(AVG[i]>=70 && AVG[i]<=84)
+            {
+                grades[i] = 'B';
+                System.out.println("your grad is -B- ");
+            }
+            else if(AVG[i]>=50 && AVG[i]<=69)
+            {
+                grades[i] = 'C';
+                System.out.println("your grad is -C- ");
+            }
+            else if(AVG[i]<50)
+            {
+                grades[i] = 'F';
+                System.out.println("your grad is -F- ");
+            }
+            System.out.println("================================");
+
+        }
+        for(int j=0;j<number;j++)
+        {
+            System.out.println("student --"+ (j+1) +"--");
+            System.out.println("Name: "+name[j]);
+            System.out.println("agverage grades: "+AVG[j]);
+            System.out.println( "your grade is: "+grades[j]);
+            System.out.println("========================");
+        }
+    }
+}
 ////////////////////////////////////------code 2-----////////////////////////////////////////////
 //public class Main
 //{
