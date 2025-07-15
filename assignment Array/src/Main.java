@@ -129,7 +129,44 @@
 //    }
 //}
 /////////////////////////////////////////////////////////////////////////////////
+// import java.util.Scanner;
 
+// public class Main {
+
+//     public static void main(String[] args)
+//     {
+//         Scanner user = new Scanner(System.in);
+//         int[] numbers = {10,20,30,40,50};
+
+//         System.out.print("Array: ");
+//         for (int i = 0; i < numbers.length; i++)
+//         {
+//             System.out.print(numbers[i] + " ");
+//         }
+
+//         System.out.print("\nEnter number to search: ");
+//         int search = user.nextInt();
+
+//         boolean found = false;
+//         for (int i = 0; i < numbers.length; i++)
+//         {
+//             if (numbers[i] == search)
+//             {
+//                 found = true;
+//                 break;
+//             }
+//         }
+//         if (found)
+//         {
+//             System.out.println(search + " exist in the array");
+//         }
+//         else
+//         {
+//             System.out.println(search + " doesn't exist in the array");
+//         }
+
+//     }
+// }
 
 
 
